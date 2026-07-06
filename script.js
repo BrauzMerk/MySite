@@ -26,3 +26,9 @@ cards.forEach(card => {
   card.style.transition = "0.6s ease";
   observer.observe(card);
 });
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
