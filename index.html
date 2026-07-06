@@ -1,205 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>OKEY</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-
-background:#050505;
-color:white;
-overflow-x:hidden;
-
-}
-
-.hero{
-
-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-flex-direction:column;
-
-text-align:center;
-
-padding:25px;
-
-position:relative;
-
-}
-
-.background{
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:
-radial-gradient(circle at top,#1b4fff33,transparent 35%),
-radial-gradient(circle at bottom,#00d4ff22,transparent 35%),
-#050505;
-
-z-index:-2;
-
-}
-
-.glow{
-
-position:absolute;
-
-width:260px;
-height:260px;
-
-background:#246BFD;
-
-filter:blur(170px);
-
-opacity:.35;
-
-animation:float 7s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-50%{
-
-transform:translateY(-40px);
-
-}
-
-}
-
-h1{
-
-font-size:55px;
-
-letter-spacing:8px;
-
-margin-bottom:18px;
-
-}
-
-p{
-
-font-size:18px;
-
-opacity:.75;
-
-max-width:500px;
-
-line-height:1.8;
-
-}
-
-.button{
-
-margin-top:45px;
-
-padding:16px 42px;
-
-border-radius:40px;
-
-background:white;
-
-color:black;
-
-text-decoration:none;
-
-font-weight:600;
-
-transition:.35s;
-
-}
-
-.button:hover{
-
-transform:scale(1.07);
-
-}
-
-.scroll{
-
-position:absolute;
-
-bottom:35px;
-
-font-size:30px;
-
-animation:down 2s infinite;
-
-opacity:.6;
-
-}
-
-@keyframes down{
-
-50%{
-
-transform:translateY(12px);
-
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Моё портфолио</title>
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<div class="background"></div>
+  <!-- 🌌 Hero -->
+  <section class="hero">
+    <div class="glass">
+      <h1>Привет, я создаю сайты</h1>
+      <p>Красивые, быстрые и продающие лендинги</p>
+      <a href="#services" class="btn">Смотреть дальше ↓</a>
+    </div>
+  </section>
 
-<div class="hero">
+  <!-- 💻 Services -->
+  <section id="services" class="section">
+    <h2>💻 Услуги</h2>
+    <div class="grid">
+      <div class="card">Landing Page</div>
+      <div class="card">UI / UX дизайн</div>
+      <div class="card">Адаптивные сайты</div>
+    </div>
+  </section>
 
-<div class="glow"></div>
+  <!-- 🌟 Why -->
+  <section class="section">
+    <h2>🌟 Почему выбирают меня</h2>
+    <div class="grid">
+      <div class="card">⚡ Быстро</div>
+      <div class="card">🎯 Качественно</div>
+      <div class="card">💎 Стильно</div>
+    </div>
+  </section>
 
-<h1>OKEY</h1>
+  <!-- 📂 Portfolio -->
+  <section class="section">
+    <h2>📂 Портфолио</h2>
+    <div class="grid">
+      <div class="card">Проект 1</div>
+      <div class="card">Проект 2</div>
+      <div class="card">Проект 3</div>
+    </div>
+  </section>
 
-<p>
+  <!-- 📞 Contact -->
+  <section class="section">
+    <h2>📞 Контакты</h2>
+    <div class="card contact">
+      <p>Telegram: @yourname</p>
+      <p>Instagram: @yourname</p>
+    </div>
+  </section>
 
-Создаю современные сайты,
-которые выглядят дорого
-и помогают бизнесу получать клиентов.
+  <!-- ⬇️ Footer -->
+  <footer>
+    <p>© 2026 — Сделано с 💙</p>
+  </footer>
 
-</p>
-
-<a class="button" href="#">
-
-Заказать сайт
-
-</a>
-
-<div class="scroll">
-
-↓
-
-</div>
-
-</div>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
