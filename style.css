@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b0f2a, #050510);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 🌌 Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.glass {
+  padding: 40px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,255,255,0.1);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: cyan;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 📦 Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* 📞 Contact */
+.contact {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* ⬇️ Footer */
+footer {
+  padding: 30px;
+  text-align: center;
+  opacity: 0.5;
+}
