@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>OKEY</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#050505;
+color:white;
+overflow-x:hidden;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:25px;
+
+position:relative;
+
+}
+
+.background{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(circle at top,#1b4fff33,transparent 35%),
+radial-gradient(circle at bottom,#00d4ff22,transparent 35%),
+#050505;
+
+z-index:-2;
+
+}
+
+.glow{
+
+position:absolute;
+
+width:260px;
+height:260px;
+
+background:#246BFD;
+
+filter:blur(170px);
+
+opacity:.35;
+
+animation:float 7s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-40px);
+
+}
+
+}
+
+h1{
+
+font-size:55px;
+
+letter-spacing:8px;
+
+margin-bottom:18px;
+
+}
+
+p{
+
+font-size:18px;
+
+opacity:.75;
+
+max-width:500px;
+
+line-height:1.8;
+
+}
+
+.button{
+
+margin-top:45px;
+
+padding:16px 42px;
+
+border-radius:40px;
+
+background:white;
+
+color:black;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.button:hover{
+
+transform:scale(1.07);
+
+}
+
+.scroll{
+
+position:absolute;
+
+bottom:35px;
+
+font-size:30px;
+
+animation:down 2s infinite;
+
+opacity:.6;
+
+}
+
+@keyframes down{
+
+50%{
+
+transform:translateY(12px);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="hero">
+
+<div class="glow"></div>
+
+<h1>OKEY</h1>
+
+<p>
+
+Создаю современные сайты,
+которые выглядят дорого
+и помогают бизнесу получать клиентов.
+
+</p>
+
+<a class="button" href="#">
+
+Заказать сайт
+
+</a>
+
+<div class="scroll">
+
+↓
+
+</div>
+
+</div>
+
+</body>
+
+</html>
